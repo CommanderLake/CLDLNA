@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.33529.398
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLDLNA", "CLDLNA\CLDLNA.csproj", "{D2A328F7-1A92-404B-B0D6-1D8AF46B995B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2A328F7-1A92-404B-B0D6-1D8AF46B995B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2A328F7-1A92-404B-B0D6-1D8AF46B995B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2A328F7-1A92-404B-B0D6-1D8AF46B995B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2A328F7-1A92-404B-B0D6-1D8AF46B995B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D1318C6-E605-488D-831D-4DF67F3B785F}
+	EndGlobalSection
+EndGlobal
