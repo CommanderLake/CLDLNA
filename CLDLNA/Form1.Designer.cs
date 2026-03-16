@@ -29,6 +29,7 @@
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.butRemove = new System.Windows.Forms.Button();
 			this.butAdd = new System.Windows.Forms.Button();
+			this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -74,9 +75,7 @@
 			// 
 			// butRemove
 			// 
-			this.butRemove.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			this.butRemove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.butRemove.Location = new System.Drawing.Point(75, 427);
 			this.butRemove.Margin = new System.Windows.Forms.Padding(0);
 			this.butRemove.Name = "butRemove";
@@ -88,9 +87,7 @@
 			// 
 			// butAdd
 			// 
-			this.butAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			this.butAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.butAdd.Location = new System.Drawing.Point(0, 427);
 			this.butAdd.Margin = new System.Windows.Forms.Padding(0);
 			this.butAdd.Name = "butAdd";
@@ -107,6 +104,7 @@
 			this.ClientSize = new System.Drawing.Size(549, 450);
 			this.Controls.Add(this.panel1);
 			this.Name = "Form1";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "CLDLNA";
 			this.panel1.ResumeLayout(false);
 			this.ResumeLayout(false);
@@ -121,6 +119,7 @@
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Button butRemove;
 		private System.Windows.Forms.Button butAdd;
+		private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
 	}
 }
 
