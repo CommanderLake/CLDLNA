@@ -301,7 +301,10 @@ namespace CLDLNA{
 					}
 				else ResolveChildren(objectId, all);
 			}
-			all.Sort((a, b) => string.Compare(a.Title, b.Title, StringComparison.OrdinalIgnoreCase));
+			all.Sort((a, b) => {
+				if(a.IsContainer != b.IsContainer) return a.IsContainer ? -1 : 1;
+				return string.Compare(a.Title, b.Title, StringComparison.OrdinalIgnoreCase);
+			});
 			total = all.Count;
 			var s = (int)Math.Min(start, (uint)all.Count);
 			var endReq = req > uint.MaxValue - start ? uint.MaxValue : start + req;
