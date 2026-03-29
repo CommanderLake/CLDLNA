@@ -342,7 +342,10 @@ namespace CLDLNA{
 				if(rootIndex < 0 || rootIndex >= _roots.Count) return;
 				current = _roots[rootIndex];
 			}
-			for(var i = 1; i < parts.Length; i++) current = Path.Combine(current, Uri.UnescapeDataString(parts[i]));
+			for(var i = 1; i < parts.Length; i++){
+				if(string.Equals(parts[i], "d", StringComparison.OrdinalIgnoreCase)) continue;
+				current = Path.Combine(current, Uri.UnescapeDataString(parts[i]));
+			}
 			dst.AddRange(from d in SafeDirs(current).OrderBy(Path.GetFileName, StringComparer.OrdinalIgnoreCase) let name = Path.GetFileName(d) select new Item{
 				Id = objectId + "/d/" + Uri.EscapeDataString(name), ParentId = objectId, Title = name, IsContainer = true,
 				Path = d
